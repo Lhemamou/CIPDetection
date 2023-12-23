@@ -1,2 +1,4 @@
 /CIPdetection
 /flagged
+*__pycache__*
+*.pytest_cache

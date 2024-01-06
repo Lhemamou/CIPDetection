@@ -10,6 +10,7 @@ import os
 def find_unique_numbers(string):
     pattern = r'\b\d{7}\b|\b\d{13}\b'
     matches = re.findall(pattern, string)
+    matches=list(set(matches))
     return matches
 
 # Function to process text and show results

@@ -1,17 +1,11 @@
-import re
-import pandas as pd
 import tkinter as tk
+import pandas as pd
+
 from tkinter import scrolledtext
 from tkinter import messagebox
 from tkinter import filedialog
-import os
+from detection_cip import *
 
-# Function to find unique numbers in text
-def find_unique_numbers(string):
-    pattern = r'\b\d{7}\b|\b\d{13}\b'
-    matches = re.findall(pattern, string)
-    matches=list(set(matches))
-    return matches
 
 # Function to process text and show results
 def process_text():
@@ -19,6 +13,7 @@ def process_text():
     unique_numbers = find_unique_numbers(text)
     result_area.delete('1.0', tk.END)
     result_area.insert('1.0', '\n'.join(unique_numbers))
+
 
 # Function to save results to CSV
 def save_to_csv():
@@ -33,6 +28,7 @@ def save_to_csv():
             messagebox.showinfo("Info", "File saved successfully")
     else:
         messagebox.showwarning("Warning", "No data to save")
+
 
 # Function to clear the text area
 def clear_text():

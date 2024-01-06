@@ -13,6 +13,12 @@ The CIP code or Presentation Identifying Code is a 7 or 13 digit numerical code 
 2. Install the secret ingredients: `pip install -r requirements.txt`
 3. Unleash the power: Run `detection_cip.py` and start feeding text to our Gradio wizard! 🧙
 
+## 🖥️ Tkinter Version Highlights
+- 🌟 Offline Capability: Run CIPDetection without needing an internet connection.
+- 💻 Desktop Interface: A simple and intuitive Tkinter-based GUI for easy operation.
+- 🔄 Same Efficient Detection: Extract 7 or 13-digit CIP numbers with the same accuracy and speed.
+- 📂 CSV Output: Your data, still neatly exported into a CSV file for convenience.
+
 ## 🐳 Docker Fans, Rejoice!
 Dive into containerized magic with our `Dockerfile`. Just build and run, and you're on a cloud! ☁️
 The image is already pushed [here](https://hub.docker.com/repository/docker/grafting1769/cipdetection)
